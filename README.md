@@ -1,6 +1,7 @@
-# Project Title: TBD
+## Project Title: TBD
 
-#*Team Members*
+#**Team Members**
+
 Ingrid, Kaleb, Bowie
 
 Project Description
