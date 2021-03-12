@@ -17,6 +17,7 @@ The purpose of our project is to build the RoboAdvisor that helps the prospectiv
 After that, the bot will generate the list of property that similar to their preference and able to suggest the further process if the user decide to purchase the property. 
 
 **Objectives / Project Questions to Answer**
+
 The Robo Advisor is able to suggest the property that meet the user criteria by filtering through the number of listing and providing the property detail and sale price. We will also explore the possibility of using Google map to show the property in the area.    
 
 
@@ -27,8 +28,8 @@ ACTRIS API from bridgedataoutput.com - the real estate data in Austin, TX from 2
 
 **Rough Breakdown of Tasks**
 
-Ingrid - Create the Power Point Presentation and README write-up Summary. Build LAMBDA Function.
+- Ingrid - Create the Power Point Presentation and README write-up Summary. Build LAMBDA Function.
 
-Kaleb - Import Data and Build LAMBDA Function.
+- Kaleb - Import Data and Build LAMBDA Function.
 
-Bowie - create the intend and the slot type in AWS Lex. Build LAMBDA Function.
+- Bowie - create the intend and the slot type in AWS Lex. Build LAMBDA Function.
