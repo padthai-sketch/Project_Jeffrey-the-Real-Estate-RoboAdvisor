@@ -1,4 +1,4 @@
-## Project: Jeffrey, the Real Estate RoboAdvisor
+## Jeffrey, the Real Estate RoboAdvisor
 
 **Team Members**
 
