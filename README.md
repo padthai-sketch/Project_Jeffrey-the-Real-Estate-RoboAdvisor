@@ -22,9 +22,7 @@ After that, the bot will generate the list of property that similar to their pre
 
 **Objectives / Project Questions to Answer**
 
-The Robo Advisor is able to suggest the property that meet the user criteria by filtering through the number of listing and providing the property detail and sale price. We will be using machine learning models: K-Means Clustering and Sentimental Analysis to group similar properties togehter.  
-also explore the possibility of using Google map to show the property in the area.    
-
+The Robo Advisor is able to suggest the property that meet the user criteria by filtering through the number of listing and providing the property detail and sale price. We will be using machine learning models: K-Means Clustering and Sentimental Analysis to group similar properties togehter and will be using deep learning model to train the data. We will also explore the possibility of using Google map to show the property in the area.
 
 **Data Sources (APIs, Datasets)**
 
@@ -37,6 +35,17 @@ ACTRIS Dataset from Bridge Interactive API - the real estate data in Austin, TX 
 - NLTK
 
 **Rough Breakdown of Tasks**
+
+<ins>Backend</ins>
+1. Collect data from Bridge Interactive API and import neccessary libraries.
+2. Clean and standardize data
+3. Create Lambda Function, featuring machine learning and deep learning models to train data.
+
+<ins>Frontend</ins>
+1. Create the Real Estate RoboAdvisor name "Jeffrey" on AWS Lex
+2. Set up intents, utterances, and slots.
+3. Adding Lambda function and test the bot 
+
 
 - Ingrid - Create the Power Point Presentation and README write-up Summary. Build LAMBDA Function.
 
