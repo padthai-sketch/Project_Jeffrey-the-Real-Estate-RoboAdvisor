@@ -1,4 +1,4 @@
-## Project Title: Real Estate RoboAdvisor
+## Project: Real Estate RoboAdvisor
 
 **Team Members**
 
