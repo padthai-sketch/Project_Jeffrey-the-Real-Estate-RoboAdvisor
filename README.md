@@ -44,7 +44,8 @@ ACTRIS Dataset from Bridge Interactive API - the real estate data in Austin, TX 
 <ins>Frontend</ins>
 1. Create the Real Estate RoboAdvisor name "Jeffrey" on AWS Lex
 2. Set up intents, utterances, and slots.
-3. Adding Lambda function and test the bot 
+3. Add Lambda function and test the bot 
+4. Link Google Map with the bot (if possible) 
 
 
 - Ingrid - Create the Power Point Presentation and README write-up Summary. Build LAMBDA Function.
