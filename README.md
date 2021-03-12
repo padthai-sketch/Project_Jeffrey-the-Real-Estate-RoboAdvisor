@@ -1,5 +1,7 @@
 ## Jeffrey, the Real Estate RoboAdvisor
 
+<img src="https://github.com/padthai-sketch/Project-RealEstate-RoboAdvisor-Group-6-/blob/main/Images/logo.png?raw=true"/>
+
 **Team Members**
 
 *Ingrid, Kaleb, Bowie*
@@ -19,7 +21,8 @@ After that, the bot will generate the list of property that similar to their pre
 
 **Objectives / Project Questions to Answer**
 
-The Robo Advisor is able to suggest the property that meet the user criteria by filtering through the number of listing and providing the property detail and sale price. We will also explore the possibility of using Google map to show the property in the area.    
+The Robo Advisor is able to suggest the property that meet the user criteria by filtering through the number of listing and providing the property detail and sale price. We will be using machine learning models: K-Means Clustering and Sentimental Analysis to group similar properties togehter.  
+also explore the possibility of using Google map to show the property in the area.    
 
 
 **Data Sources (APIs, Datasets)**
