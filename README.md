@@ -28,7 +28,7 @@ also explore the possibility of using Google map to show the property in the are
 
 **Data Sources (APIs, Datasets)**
 
-ACTRIS API from bridgedataoutput.com - the real estate data in Austin, TX from 2020
+ACTRIS Dataset from Bridge Interactive API - the real estate data in Austin, TX from 2020
 
 **Libraries**
 
