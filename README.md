@@ -6,7 +6,7 @@
 
 **Project Description**
 
-The purpose of our project is to build the RoboAdvisor that helps the prospective homebuyer find their dream home in Austin, Texas. In order to search for the house, the user will be asked to provide neccessary parameters as following. 
+The purpose of our project is to build the RoboAdvisor from AWS Lex that helps the prospective homebuyer find their dream home in Austin, Texas. In order to search for the house, the user will be asked to provide neccessary parameters as following. 
 - personal annual income, 
 - property type, 
 - price range, 
@@ -26,6 +26,10 @@ The Robo Advisor is able to suggest the property that meet the user criteria by 
 
 ACTRIS API from bridgedataoutput.com - the real estate data in Austin, TX from 2020
 
+**Libraries**
+- sklearn
+- tensorflow
+- NLTK
 
 **Rough Breakdown of Tasks**
 
