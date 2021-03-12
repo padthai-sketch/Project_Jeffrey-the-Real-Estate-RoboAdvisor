@@ -33,4 +33,4 @@ ACTRIS API from bridgedataoutput.com - the real estate data in Austin, TX from 2
 
 - Kaleb - Import Data and Build LAMBDA Function.
 
-- Bowie - create the intend and the slot type in AWS Lex. Build LAMBDA Function.
+- Bowie - Create the intend and the slot type in AWS Lex. Build LAMBDA Function.
