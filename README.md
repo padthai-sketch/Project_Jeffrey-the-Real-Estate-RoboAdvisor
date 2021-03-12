@@ -5,6 +5,7 @@
 *Ingrid, Kaleb, Bowie*
 
 **Project Description**
+
 The purpose of our project is to build the RoboAdvisor that helps the prospective homebuyer find their dream home in Austin, Texas. In order to search for the house, the user will be asked to provide neccessary parameters as following. 
 - personal annual income, 
 - property type, 
