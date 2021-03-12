@@ -1,6 +1,6 @@
 ## Jeffrey, the Real Estate RoboAdvisor
 
-**#Team Members**
+**Team Members**
 
 *Ingrid, Kaleb, Bowie*
 
@@ -27,6 +27,7 @@ The Robo Advisor is able to suggest the property that meet the user criteria by 
 ACTRIS API from bridgedataoutput.com - the real estate data in Austin, TX from 2020
 
 **Libraries**
+
 - sklearn
 - tensorflow
 - NLTK
