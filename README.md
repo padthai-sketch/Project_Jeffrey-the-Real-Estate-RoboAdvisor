@@ -1,4 +1,3 @@
-## Team 6
 ## Jeffrey, the Real Estate RoboAdvisor
 
 <p align="center">
