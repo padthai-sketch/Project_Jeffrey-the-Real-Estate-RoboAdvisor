@@ -3,7 +3,7 @@
 <p align="center">
 <img src="https://github.com/padthai-sketch/Project-RealEstate-RoboAdvisor-Group-6-/blob/main/Images/logo.png?raw=true" alt="drawing" width="300"/></p>
 
-**Team Members**
+**Team Members (Group6)**
 
 *Ingrid, Kaleb, Bowie*
 
