@@ -26,7 +26,7 @@ The Robo Advisor is able to suggest the property that meet the user criteria by 
 
 **Data Sources (APIs, Datasets)**
 
-ACTRIS Dataset from Bridge Interactive API - the real estate data in Austin, TX from 2020
+ACTRIS Dataset from Bridge Interactive API - the real estate data in Austin, TX
 
 **Libraries**
 
