@@ -1,9 +1,10 @@
+## Team 6
 ## Jeffrey, the Real Estate RoboAdvisor
 
 <p align="center">
 <img src="https://github.com/padthai-sketch/Project-RealEstate-RoboAdvisor-Group-6-/blob/main/Images/logo.png?raw=true" alt="drawing" width="300"/></p>
 
-**Team Members (Group6)**
+**Team Members**
 
 *Ingrid, Kaleb, Bowie*
 
