@@ -26,11 +26,49 @@ def build_validation_result(is_valid, violated_slot, message_content):
         "message": {"contentType": "PlainText", "content": message_content},
     }
 
-def set_data():
+def get_house_statistics():
     pass 
 
+def get_houses():
+    pass 
+
+def get_max_loan_amount(credit_score, annual_income, down_payment):
+    if credit_score < 500:
+        loan_amount =  down_payment / 0.1
+        total_interest = loan_amount * (1.04**30)
+        min_payment = total_interest / 30
+        
+        if annual_income / 3 > min_payment:
+            return loan_amount
+        else: 
+            return ((annual_income / 3) * 30) - (((annual_income / 3) * 30) / (1.04**30))
+            
+    if credit_score > 500 and credit_score < 620:
+        loan_amount = down_payment / 0.035
+        total_interest = loan_amount * (1.04**30)
+        min_payment = total_interest / 30
+        
+        if annual_income / 3 > min_payment:
+            return loan_amount
+        else: 
+            return ((annual_income / 3) * 30) - (((annual_income / 3) * 30) / (1.04**30))
+        
+    if credit_score > 620:
+        loan_amount = down_payment / 0.03
+        total_interest = loan_amount * (1.04**30)
+        min_payment = total_interest / 30
+        
+        if annual_income / 3 > min_payment:
+            return loan_amount
+        else: 
+            return ((annual_income / 3) * 30) - (((annual_income / 3) * 30) / (1.04**30))
+        
 def get_maps(addresses):
     pass
+
+def get_recommended_addresses(max_loan_amount, bedroom_number, bathroom_number, square_feet):
+    df = get_house_statistics()
+    
 
 def validate_data(age, credit_score, annual_income, down_payment, bedroom_number,bathroom_number, square_feet):
     """
@@ -69,24 +107,13 @@ def validate_data(age, credit_score, annual_income, down_payment, bedroom_number
             )
     if down_payment is not None:
         down_payment = parse_int(down_payment)
-        if down_payment < 10 and credit_score < 500: 
+        if down_payment > 0: 
             return build_validation_result(
                 False,
                 "down_payment"
-                "Sorry, you need a down payment greater than 10% with your credit score. Grr!"
+                "Sorry, you need a down payment greater than zero. Grr!"
             )
-        elif down_payment < 3.5 and credit_score < 580:
-            return build_validation_result(
-                False,
-                "down_payment"
-                "Sorry, you need a down payment greater than 3.5% with your credit score. Grr!"
-            )
-        elif down_payment < 3 and credit_score < 620:
-            return build_validation_result(  
-                False,
-                "down_payment"
-                "Sorry, you need a down payment greater than 3% with your credit score. Grr!"
-            )
+       
     if bedroom_number is not None and bathroom_number is not None:    
         bedroom_number = parse_int(bedroom_number)
         bathroom_number = parse_int(bathroom_number)
@@ -166,16 +193,18 @@ def close(session_attributes, fulfillment_state, message):
 
 
 ### Intents Handlers ###
-def recommend_portfolio(intent_request):
+def recommend_property(intent_request):
     """
     Performs dialog management and fulfillment for recommending a portfolio.
     """
-
     first_name = get_slots(intent_request)["firstName"]
     age = get_slots(intent_request)["age"]
-    investment_amount = get_slots(intent_request)["investmentAmount"]
-    risk_level = get_slots(intent_request)["riskLevel"]
-    source = intent_request["invocationSource"]
+    credit_score = get_slots(intent_request)["creditScore"]
+    annual_income = get_slots(intent_request)["annualIncome"]
+    down_payment = get_slots(intent_request)["downPayment"]
+    bedroom_number = intent_request["bedroomNumber"]
+    bathroom_number = intent_request["bathroomNumber"]
+    square_feet = intent_request["squareFeet"]
 
     if source == "DialogCodeHook":
         # Perform basic validation on the supplied input slots.
@@ -201,8 +230,10 @@ def recommend_portfolio(intent_request):
 
         return delegate(output_session_attributes, get_slots(intent_request))
 
-    # Get the initial investment recommendation
-    initial_recommendation = get_investment_recommendation(risk_level)
+    # Get loan amount
+    max_loan_amount = get_max_loan_amount(credit_score, annual_income, down_payment)
+    housing_addresses = get_recommended_addresses(max_loan_amount, bedroom_number, bathroom_number, square_feet)
+    map_hyperlinks = get_map(housing_addresses)
 
     # Return a message with the initial recommendation based on the risk level.
     return close(
@@ -211,9 +242,9 @@ def recommend_portfolio(intent_request):
         {
             "contentType": "PlainText",
             "content": """{} thank you for your information;
-            based on the risk level you defined, my recommendation is to choose an investment portfolio with {}
+            based on the loan information you provided, I would recommend these following properties {}
             """.format(
-                first_name, initial_recommendation
+                first_name, map_hyperlinks
             ),
         },
     )
