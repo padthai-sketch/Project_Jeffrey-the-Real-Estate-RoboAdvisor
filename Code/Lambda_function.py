@@ -32,7 +32,7 @@ def set_data():
 def get_maps(addresses):
     pass
 
-def validate_data(age, credit_score, intent_request):
+def validate_data(age, credit_score, annual_income, down_payment, bedroom_number,bathroom_number, square_feet):
     """
     Validates the data provided by the user.
     """
