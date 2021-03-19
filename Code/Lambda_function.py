@@ -64,10 +64,26 @@ def get_max_loan_amount(credit_score, annual_income, down_payment):
             return ((annual_income / 3) * 30) - (((annual_income / 3) * 30) / (1.04**30))
         
 def get_maps(addresses):
-    pass
+    map_urls = []
+    url = "https://www.google.com/maps/search/" 
+    for address in addresses:
+        map_urls.append(url + address.replace(" ", "+"))
+    return map_urls
+
 
 def get_recommended_addresses(max_loan_amount, bedroom_number, bathroom_number, square_feet):
-    df = get_house_statistics()
+    df1 = get_house_statistics()
+    df2 = get_houses()
+
+    sq_class = df1['BuildingAreaTotal.3'][2:][df1['BuildingAreaTotal.3'][2:].astype(float) > square_feet].index.values.tolist()
+    bd_class = df1['BedroomsTotal.3'][2:][df1['BedroomsTotal.3'][2:].astype(float) > bedroom_number].index.values.tolist()
+    bt_class = df1['BathroomsTotalInteger.3'][2:][df1['BathroomsTotalInteger.3'][2:].astype(float) > bathroom_number].index.values.tolist()
+    pr_class = df1['ListPrice.3'][2:][(df1['ListPrice.3'][2:].astype(float) <= max_loan_amount)].index.values.tolist()
+
+    all_list = sq_class + bd_class + bt_class + pr_class
+    suggested_class = max(set(all_list), key = all_list.count)
+    mask = (df2['class'] == suggested_class)&(df2['ListPrice'] <= max_loan_amount)&(df2['BedroomsTotal'] <= bedroom_number)&(df2['BathroomsTotalInteger'] <= bathroom_number)&(df2['BuildingAreaTotal'] <= square_feet)
+    return df2[mask].sample(5)['UnparsedAddress'].values
     
 
 def validate_data(age, credit_score, annual_income, down_payment, bedroom_number,bathroom_number, square_feet):
