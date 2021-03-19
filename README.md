@@ -7,49 +7,21 @@
 
 *Ingrid, Kaleb, Bowie*
 
-**Project Description**
 
-The purpose of our project is to build the RoboAdvisor from AWS Lex that helps prospective homebuyer find their dream home in Austin, Texas. In order to search for the house, the user will be asked to provide the neccessary parameters as following. 
-- personal annual income, 
-- property type, 
-- price range, 
-- number of bedrooms, 
-- number of bathrooms, 
-- location, 
-- the amount of down payment. 
-
-After that, the bot will generate the list of property that similar to their preference and able to suggest the further process if the user decide to purchase the property. 
-
-**Objectives / Project Questions to Answer**
-
-The Robo Advisor is able to suggest the property that meet the user criteria by filtering through the number of listing and providing the property detail and sale price. We will be using machine learning models: K-Means Clustering and Sentimental Analysis to group similar properties togehter and will be using deep learning model to train the data. We will also explore the possibility of using Google map to show the property in the area.
-
-**Data Sources (APIs, Datasets)**
-
-ACTRIS Dataset from Bridge Interactive API - the real estate data in Austin, TX
-
-**Libraries**
-
-- sklearn
-- tensorflow
-- NLTK
-
-**Rough Breakdown of Tasks**
-
-<ins>Backend</ins>
-1. Collect data from Bridge Interactive API and import neccessary libraries.
-2. Clean and standardize data
-3. Create Lambda Function, featuring machine learning and deep learning models to train data.
-
-<ins>Frontend</ins>
-1. Create the Real Estate RoboAdvisor name "Jeffrey" on AWS Lex
-2. Set up intents, utterances, and slots.
-3. Add Lambda function and test the bot 
-4. Link Google Map with the bot (if possible) 
+The purpose of our project was to build a RoboAdvisor using AWS Lex that helps prospective homebuyers find their dream home in Austin, Texas. This to will act as mix of a mortgage calculator and a real estate website such as Zillow or Redfin. In order to get their recommendation, the user will be asked to provide the neccessary parameters as following:
+- Name
+- Age
+- Credit Score
+- Annual Household Income
+- Amout Saved for a Downpayment
+- Number of Bedrooms
+- Number of Bathrooms 
+- Square Footage
 
 
-- Ingrid - Create the Power Point Presentation and README write-up Summary. Build LAMBDA Function.
+After that information is provided by the user, the bot will generate a list of a few properties that fit their preferences and provide the listings for each property. Don't waste time searching through houses that don't fit your preferences, let Jeffrey do the work for you!
 
-- Kaleb - Import Data and Build LAMBDA Function.
 
-- Bowie - Create the intend and the slot type in AWS Lex. Build LAMBDA Function.
+The Robo Advisor is able to suggest properties that meets the user's criteria by filtering through the number of listings in our dataset. We got this dataset from Bridge Interactive, using an API. This includes a large number of listings in Austin, Texas along with all of the property details for each listing. 
+
+
