@@ -24,4 +24,6 @@ After that information is provided by the user, the bot will generate a list of 
 
 The Robo Advisor is able to suggest properties that meets the user's criteria by filtering through the number of listings in our dataset. We got this dataset from Bridge Interactive, using an API. This includes a large number of listings in Austin, Texas along with all of the property details for each listing. 
 
-
+<p align="center">
+<img src="https://github.com/padthai-sketch/Project_RealEstate-RoboAdvisor-Team6/blob/main/Images/JeffreyBot_Recording.gif" alt="drawing" width="400"/>
+</p>
