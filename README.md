@@ -28,4 +28,4 @@ The Robo Advisor is able to suggest properties that meets the user's criteria by
 <img src="https://github.com/padthai-sketch/Project_RealEstate-RoboAdvisor-Team6/blob/main/Images/JeffreyBot_Recording.gif" alt="drawing" width="800"/>
 </p>
 
-** We did not have enough time to trobleshoot the problem with Lambda function. Jeffrey would be more efficient if we could fix the issue. 
+** We did not have enough time to trobleshoot the problem with Lambda function. Jeffrey would be more efficient if we were able to fix the issue. 
