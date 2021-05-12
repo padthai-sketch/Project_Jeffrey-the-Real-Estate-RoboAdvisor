@@ -7,7 +7,7 @@
 
 *Ingrid, Kaleb, Bowie*
 
-#**Project Description**
+**# Project Description**
 
 The purpose of our project was to build a RoboAdvisor using AWS Lex that helps prospective homebuyers find their dream home in Austin, Texas. This to will act as mix of a mortgage calculator and a real estate website such as Zillow or Redfin. In order to get their recommendation, the user will be asked to provide the neccessary parameters as following:
 - Name
@@ -21,15 +21,15 @@ The purpose of our project was to build a RoboAdvisor using AWS Lex that helps p
 
 After that information is provided by the user, the bot will generate a list of a few properties that fit their preferences and provide the listings for each property. Don't waste time searching through houses that don't fit your preferences, let Jeffrey do the work for you!
 
-**Objectives** 
+**# Objectives** 
 
 The Robo Advisor is able to suggest properties that meet the user criteria by filtering through the number of listing and providing the property detail and sale price. We will be using machine learning models: K-Means Clustering and Sentimental Analysis to group similar properties togehter and will be using deep learning model to train the data. We will also explore the possibility of using Google map to show the property in the area.
 
-**Data Sources (APIs, Datasets)**
+**# Data Sources (APIs, Datasets)**
 
 ACTRIS Dataset from Bridge Interactive API - the real estate data in Austin, TX
 
-**Libraries**
+**# Libraries**
 
 sklearn
 tensorflow
