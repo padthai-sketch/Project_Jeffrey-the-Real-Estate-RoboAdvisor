@@ -49,8 +49,6 @@ Rough Breakdown of Tasks
 - Add Lambda function and test the bot
 - Link Google Map with the bot (if possible)
 
-After that information is provided by the user, the bot will generate a list of a few properties that fit their preferences and provide the listings for each property. Don't waste time searching through houses that don't fit your preferences, let Jeffrey do the work for you!
-
 The Robo Advisor is able to suggest properties that meets the user's criteria by filtering through the number of listings in our dataset. We got this dataset from Bridge Interactive, using an API. This includes a large number of listings in Austin, Texas along with all of the property details for each listing. 
 
 <p align="center">
