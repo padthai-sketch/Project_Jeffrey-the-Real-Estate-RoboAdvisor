@@ -31,10 +31,11 @@ ACTRIS Dataset from Bridge Interactive API - the real estate data in Austin, TX
 
 **# Libraries**
 
-sklearn
-tensorflow
-NLTK
-Rough Breakdown of Tasks
+- Scikit-Learn
+- Tensorflow
+- NLTK
+
+**# Rough Breakdown of Tasks**
 
 *# Backend*
 
