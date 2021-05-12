@@ -36,13 +36,13 @@ tensorflow
 NLTK
 Rough Breakdown of Tasks
 
-*Backend*
+*# Backend*
 
 - Collect data from Bridge Interactive API and import neccessary libraries.
 - Clean and standardize data
 - Create Lambda Function, featuring machine learning and deep learning models to train data.
 
-*Frontend*
+*# Frontend*
 
 - Create the Real Estate RoboAdvisor name "Jeffrey" on AWS Lex
 - Set up intents, utterances, and slots.
