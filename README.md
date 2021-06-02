@@ -9,7 +9,7 @@
 
 **# Project Description**
 
-The purpose of our project was to build a RoboAdvisor using AWS Lex that helps prospective homebuyers find their dream home in Austin, Texas. This to will act as mix of a mortgage calculator and a real estate website such as Zillow or Redfin. In order to get their recommendation, the user will be asked to provide the neccessary parameters as following:
+The purpose of our project was to build a RoboAdvisor using AWS Lex that helps prospective homebuyers find their dream home in Austin, Texas. This to will act as mix of a mortgage calculator and a real estate website such as Zillow or Redfin. In order to get their recommendation, the user will be asked to provide the necessary parameters as following:
 - Name
 - Age
 - Credit Score
