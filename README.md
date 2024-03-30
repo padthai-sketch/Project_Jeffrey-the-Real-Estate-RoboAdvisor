@@ -37,7 +37,7 @@ ACTRIS Dataset from Bridge Interactive API - the real estate data in Austin, TX
 
 **Rough Breakdown of Tasks**
 
-*# Backend*
+*Backend*
 
 - Collect data from Bridge Interactive API and import neccessary libraries.
 - Clean and standardize data
